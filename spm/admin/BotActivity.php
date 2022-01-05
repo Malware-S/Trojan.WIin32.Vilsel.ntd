@@ -149,7 +149,7 @@ A:hover {color: #0049AA; font-size: 13px; text-decoration: none; font-weight: bo
       if ($BotBlackListed)
         echo " <u>black listed</u>";
 
-      //****** determination IPï¿½& country - START
+      //****** determination IP¨& country - START
       $flag = "0";
       $country = "";
 //      $ip = long2ip(ip2long($_POST["ip"]));}
@@ -171,7 +171,7 @@ A:hover {color: #0049AA; font-size: 13px; text-decoration: none; font-weight: bo
       	  $country=$ligne2["printable_name"];
       	}
       }
-      //****** determination IPï¿½& country - END
+      //****** determination IP¨& country - END
       echo "</center><br>\r\n";
       echo "<center>$country <img src=\"$flag\"></center><br>\r\n";
 
@@ -251,7 +251,7 @@ A:hover {color: #0049AA; font-size: 13px; text-decoration: none; font-weight: bo
       for ($i=0; $i < mysql_num_rows($BotList); $i++) {
         $BotId = mysql_result($BotList,$i,'id');
         $BotIp = mysql_result($BotList,$i,'ip');
-        //****** determination IPï¿½& country - START
+        //****** determination IP¨& country - START
         $flag = "0";
         $country = "";
 //        $ip = long2ip(ip2long($_POST["ip"]));}
@@ -275,7 +275,7 @@ A:hover {color: #0049AA; font-size: 13px; text-decoration: none; font-weight: bo
             $country_count[$country_id]++;
           }
         }
-        //****** determination IPï¿½& country - END
+        //****** determination IP¨& country - END
         echo "<tr><td>$BotVer</td><td>$BotId</td><td>$BotIp</td><td>$country</td><td><img src=\"$flag\"></td></tr>\r\n";
       }
       echo "</table>\r\n";
